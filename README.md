@@ -1,3 +1,3 @@
 # Elayne_Lab1
-This is the initial sample for the website named as Elayne.
-It's an info art/creations website.
+This is the initial sample for the website for Tourism.
+It's an travel management website.
