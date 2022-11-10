@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TOURISM | Home</title>
+        <link rel="icon" href="eicon.jpg">
+    </head>
+<body>
+    <h1><b> TRAINS </b></h1>
+    <br>
+   <table class="tab3"><b><i>
+    <th>AUDIO GUIDES</th>
+    <tr>
+    <td>Prague   <audio src="prague.mp3" controls=controls></audio></td></tr>
+    <tr>
+        <td>London   <audio src="london.mp3" controls=controls></audio></td></tr>
+    <tr>
+        <td>Paris   <audio src="paris.mp3" controls=controls></audio></td></tr>
+  </i></b></table><br><br>
+  <h2>Videos</h2>
+    <video height="400px" width="700px" controls= controls><source src="tour.mp4" type="video/mp4"></video>
+    
+  <h3>We're updating our website, come back later for more content.<br>THANKYOU!</h3><br><br>
+    <form>
+      <h2>For Updates, Fill In The Form:</h2><br>
+      <label for="f">First Name: </label>
+      <input type="text" id="f" name="f"><br>
+      <label for="l">Last Name: </label>
+      <input type="text" id="l" name="l"><br>
+      <label for="ag">Age: </label>
+      <input type="number" id="ag" name="ag"><br>
+      <h3>Gender</h3><br>
+      <input type="radio" id="male" name="m" value="Male">
+      <label for="male">MALE</label><br>
+      <input type="radio" id="female" name="f" value="Female">
+      <label for="female">FEMALE</label><br>
+      <input type="radio" id="PNS" name="pns" value="pns">
+      <label for="PNS">Prefer Not To Say</label><br>
+      <label for="n">E-Mail: </label>
+      <input type="text" id="n" name="n"><br>
+      <h3>Are you an already existing user?</h3><br>
+      <input type="checkbox" id="yes" name="yes" value="y">
+      <label for="yes"> YES </label><br>
+      <input type="checkbox" id="no" name="no" value="n">
+      <label for="no">NO</label><br>
+      <input type="submit" value="OK">
+  </form>
+<canvas id="can1" height="100px" width="200px" style="border:1px solid #000000"></canvas>
+<h3>Find your Current location</h3>  
+<button onclick="getlocation()">Click me</button>  
+<div id="location"></div>  
+<script>  
+    var x= document.getElementById("location");  
+    function getlocation() {  
+        if(navigator.geolocation){  
+            alert("your browser is supporting Geolocation API")  
+        }  
+        else  
+        {  
+            alert("Sorry! your browser is not supporting")  
+        }  
+    }  
+</script> 
+    
+<script>
+var c = document.getElementById("can1");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+</script>
+  <footer>
+    <h3>Created By @Nitendra Jaiswal</h3>
+    </footer>
+    </body></html>
