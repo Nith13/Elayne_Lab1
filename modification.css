@@ -1,0 +1,29 @@
+html{
+    font-size: 20px;
+    background-image: radial-gradient(red, yellow,green);
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+p,h1 {
+    color: darkturquoise;
+    width:500px;
+    border: 1px solid black;
+}
+
+table{
+    border: 2px solid;
+    align-content: center;
+    background-color: aquamarine;
+}
+
+form{
+    padding: 20px;
+}
+
+canvas{
+    background-color: azure;
+    padding: 30px;
+}
