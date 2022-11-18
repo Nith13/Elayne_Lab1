@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE tourism [
+<!ELEMENT details (userid,name,gender,contact,email,address,interests)>
+<!ELEMENT userid(#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT contact(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT interests(#PCDATA)>
+]>
