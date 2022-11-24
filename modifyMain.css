@@ -1,0 +1,48 @@
+    .justify {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table,tr,th,td{
+    width: fit-content;
+    align-items: center;
+    margin-left: 30%;
+    text-align: center;
+    background-color: burlywood;
+    color: black;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid black;
+    }
+
+    .no-bullets {
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+    }
+
+    a:hover{
+    color: green;
+    }
+    
+    form  { display: table;  }
+    .row    { display: table-row;  }
+    label { display: table-cell; }
+    input { display: table-cell; }
+    
+    body{
+    background-image: radial-gradient(cyan,orange,white);
+    text-align: center;
+    border:3px solid brown;
+    font-family: sans-serif;
+    font-size:medium;
+    }
+
+    footer{
+    background-color: black;
+    color: white;
+    font-family:sans-serif;
+    font-size: 15px;
+    }
