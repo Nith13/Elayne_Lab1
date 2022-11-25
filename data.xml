@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<users>
+    <profile>
+        <userid>US101</userid>
+        <name>Nitendra</name>
+        <gender>Male</gender>
+        <contact>98867439</contact>
+        <email>nith.jaiswal@gmail.com</email>
+        <address>Bangalore</address>
+        <interests>None</interests>
+    </profile>
+    <profile>
+        <userid>US102</userid>
+        <name>Kumar</name>
+        <gender>Male</gender>
+        <contact>98865639</contact>
+        <email>kumar@gmail.com</email>
+        <address>Mirzapur</address>
+        <interests>Painting</interests>
+    </profile>
+    <profile>
+        <userid>US103</userid>
+        <name>Rohit</name>
+        <gender>Male</gender>
+        <contact>88863339</contact>
+        <email>rohit@gmail.com</email>
+        <address>Kolkata</address>
+        <interests>Guitar,football</interests>
+    </profile>
+    <profile>
+        <userid>US104</userid>
+        <name>Nandini</name>
+        <gender>Female</gender>
+        <contact>77867439</contact>
+        <email>nandini21@gmail.com</email>
+        <address>Chandigarh</address>
+        <interests>Art,Photography</interests>
+    </profile>
+    <profile>
+        <userid>US105</userid>
+        <name>Kenneth</name>
+        <gender>Male</gender>
+        <contact>78853439</contact>
+        <email>kenneth@gmail.com</email>
+        <address>Mumbai</address>
+        <interests>Video Games, sydney</interests>
+    </profile>
+</users>
