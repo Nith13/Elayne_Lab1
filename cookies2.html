@@ -1,0 +1,129 @@
+<html>
+   <head>   
+    <!-- <script defer src="bcolor.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script type = "text/javascript">
+         <!--
+            function WriteCookie() {
+               var now = new Date();
+               now.setMonth( now.getMonth() + 1 );
+               cookievalue = escape(document.myform.customer.value) + ";"
+                
+               document.cookie = "name=" + cookievalue;
+               document.cookie = "expires=" + now.toUTCString() + ";"
+               document.write ("Setting Cookies : " + "name=" + cookievalue );
+            }
+         //-->
+      </script>  
+      <script type = "text/javascript">
+        <!--
+           function ReadCookie() {
+              var allcookies = document.cookie;
+              document.write ("All Cookies : " + allcookies );
+               
+              // Get all the cookies pairs in an array
+              cookiearray = allcookies.split(';');
+               
+              // Now take key value pair out of this array
+              for(var i=0; i<cookiearray.length; i++) {
+                 name = cookiearray[i].split('=')[0];
+                 value = cookiearray[i].split('=')[1];
+                 document.write ("Key is : " + name + " and Value is : " + value);
+              }
+           }
+        //-->
+     </script>   
+      <script type = "text/javascript">
+        <!--
+           function WriteCookie() {
+              var now = new Date();
+              now.setMonth( now.getMonth() - 1 );
+              cookievalue = escape(document.myform.customer.value) + ";"
+               
+              document.cookie = "name=" + cookievalue;
+              document.cookie = "expires=" + now.toUTCString() + ";"
+              document.write("Setting Cookies : " + "name=" + cookievalue );
+           }
+         //-->
+        </script>    
+     <style>
+        body {
+  padding: 40px;
+}
+     </style> 
+     <script>
+        var setCookie = function (n, val) {
+    var exdays = 30;
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = n + "=" + val + "; " + expires;
+};
+
+var getCookie = function (n) {
+    var name = n + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+};
+
+document.onclick = function (e) {
+    if (e.target.className == 'btn') {
+        var favColor = e.target.style.backgroundColor;
+        setCookie('color', favColor);
+        document.body.style.backgroundColor = favColor;
+        console.log(favColor);
+    }
+};
+
+window.onload = function () {
+    var favColor = document.body.style.backgroundColor;
+    var color = getCookie('color');
+    if (color === '') {
+        document.body.style.backgroundColor = favColor;
+    } else {
+      document.body.style.backgroundColor = color;
+    }
+};
+     </script>
+
+   </head>
+   <body>
+    <div align="center">
+      <form name = "myform" action = "">
+        <label for="name">
+            Enter name: <input type = "text" name = "customer"/>
+        </label>
+        <div>
+            <label for="read">
+                <button type="button" class="btn btn-success" onclick="WriteCookie()">Create Cookie</button>
+            </label>
+        <label for="show">
+            <input type = "button" class="btn btn-warning" value = "ReadCookie" onclick = "ReadCookie()"/>
+        </label>
+        <label for="delete">
+            <input type = "button" class="btn btn-danger" value = "DeleteCookie" onclick = "WriteCookie()"/>
+        </label></div>
+      </form>   
+      <div>
+        <div id="colors">
+            <span class="btn" style="background-color: red;"></span>
+            <span class="btn" style="background-color: gray;"></span>
+            <span class="btn" style="background-color: greenyellow;"></span>
+            <span class="btn" style="background-color: blue;"></span>
+            <span class="btn" style="background-color: #66f7ff;"></span>
+            <span class="btn" style="background-color: #ff00f5;"></span>
+            <span class="btn" style="background-color: #fefdff;"></span>
+            <span class="btn" style="background-color: #000000;"></span>
+            <span class="btn" style="background-color: rgba(0, 0, 0, 0.4);"></span>
+        </div>
+      </div>  
+      </div> 
+   </body>
+</html>
